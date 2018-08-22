@@ -4,6 +4,8 @@ import { ShellPage } from './shell/shell.page';
 
 const routes: Routes = [
   {
+    // redirect here if the app is not synced
+    // or not logged in
     path: 'sync',
     loadChildren: './sync/sync.module#SyncPageModule'
   },
@@ -16,8 +18,8 @@ const routes: Routes = [
         loadChildren: './home/home.module#HomePageModule'
       },
       {
-        path: 'list',
-        loadChildren: './list/list.module#ListPageModule'
+        path: 'plants',
+        loadChildren: './plants/plants.module#PlantsPageModule'
       },
       {
         path: '',
