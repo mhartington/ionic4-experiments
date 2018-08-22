@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { PlantsListPage } from './plants-list.page';
 import { PlantsDetailPage } from './plants-detail.page';
+import { PlantsEditPage } from './plants-edit.page';
 
 @NgModule({
   imports: [
@@ -20,9 +21,13 @@ import { PlantsDetailPage } from './plants-detail.page';
       {
         path: ':id',
         component: PlantsDetailPage
+      },
+      {
+        path: ':id/edit',
+        component: PlantsEditPage
       }
     ])
   ],
-  declarations: [PlantsListPage, PlantsDetailPage]
+  declarations: [PlantsListPage, PlantsDetailPage, PlantsEditPage]
 })
 export class PlantsPageModule {}
