@@ -1,0 +1,7 @@
+{
+  "name": "r3mobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
