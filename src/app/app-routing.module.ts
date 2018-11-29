@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ShellPage } from './shell/shell.page';
 
 const routes: Routes = [
   {
@@ -9,24 +8,20 @@ const routes: Routes = [
     path: 'sync',
     loadChildren: './sync/sync.module#SyncPageModule'
   },
+
+  {
+    path: 'plants',
+    loadChildren: './plants/plants.module#PlantsPageModule'
+  },
+
+  {
+    path: 'home',
+    loadChildren: './home/home.module#HomePageModule'
+  },
   {
     path: '',
-    component: ShellPage,
-    children: [
-      {
-        path: 'home',
-        loadChildren: './home/home.module#HomePageModule'
-      },
-      {
-        path: 'plants',
-        loadChildren: './plants/plants.module#PlantsPageModule'
-      },
-      {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
-      }
-    ]
+    redirectTo: '/home',
+    pathMatch: 'full'
   }
 ];
 

@@ -7,11 +7,12 @@
       Detail
     </ion-title>
     <ion-buttons slot="end">
-      <ion-button [routerLink]="['edit']">Edit</ion-button>
+      <ion-button [href]="'/plants/'+id+'/edit'">Edit</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   Detail here!
+  <h1>{{id}}</h1>
 </ion-content>

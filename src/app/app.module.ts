@@ -8,7 +8,6 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ShellPageModule } from './shell/shell.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +15,6 @@ import { ShellPageModule } from './shell/shell.module';
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    ShellPageModule,
     AppRoutingModule
   ],
   providers: [
